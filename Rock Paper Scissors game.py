@@ -95,7 +95,7 @@ while True:
         break
 
     if player not in ['0', '1', '2','end']:
-        print(f"{invalid}\n\n PLEASE ENTER 0, 1, 2 OR End TO QUIT".upper())
+        print(f"{invalid}\n\n PLEASE ENTER 0, 1, 2 to PLAY OR End TO QUIT".lower())
         continue  # star over
 
     player = int(player)
