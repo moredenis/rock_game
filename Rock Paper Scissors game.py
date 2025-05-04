@@ -39,6 +39,7 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
 win = '''
 ▗▖  ▗▖▗▄▖ ▗▖ ▗▖    ▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖
  ▝▚▞▘▐▌ ▐▌▐▌ ▐▌    ▐▌ ▐▌  █  ▐▛▚▖▐▌
@@ -46,39 +47,26 @@ win = '''
   ▐▌ ▝▚▄▞▘▝▚▄▞▘    ▐▙█▟▌▗▄█▄▖▐▌  ▐▌                       
 '''
 lose = '''
-░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓██████▓▒░ ░▒▓███████▓▒░▒▓████████▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░        
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░        
- ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓██████▓▒░   
-   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░        
-   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░        
-   ░▒▓█▓▒░    ░▒▓██████▓▒░ ░▒▓██████▓▒░       ░▒▓████████▓▒░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░ 
+▗▖  ▗▖▗▄▖ ▗▖ ▗▖    ▗▖    ▗▄▖  ▗▄▄▖▗▄▄▄▖
+ ▝▚▞▘▐▌ ▐▌▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▌   ▐▌   
+  ▐▌ ▐▌ ▐▌▐▌ ▐▌    ▐▌   ▐▌ ▐▌ ▝▀▚▖▐▛▀▀▘
+  ▐▌ ▝▚▄▞▘▝▚▄▞▘    ▐▙▄▄▖▝▚▄▞▘▗▄▄▞▘▐▙▄▄▖
+'''
 
-'''
 draw = '''                                                                                                 
-DDDDDDDDDDDDD      RRRRRRRRRRRRRRRRR                  AAA   WWWWWWWW                           WWWWWWWW
-D::::::::::::DDD   R::::::::::::::::R                A:::A  W::::::W                           W::::::W
-D:::::::::::::::DD R::::::RRRRRR:::::R              A:::::A W::::::W                           W::::::W
-DDD:::::DDDDD:::::DRR:::::R     R:::::R            A:::::::AW::::::W                           W::::::W
-  D:::::D    D:::::D R::::R     R:::::R           A:::::::::AW:::::W           WWWWW           W:::::W 
-  D:::::D     D:::::DR::::R     R:::::R          A:::::A:::::AW:::::W         W:::::W         W:::::W  
-  D:::::D     D:::::DR::::RRRRRR:::::R          A:::::A A:::::AW:::::W       W:::::::W       W:::::W   
-  D:::::D     D:::::DR:::::::::::::RR          A:::::A   A:::::AW:::::W     W:::::::::W     W:::::W    
-  D:::::D     D:::::DR::::RRRRRR:::::R        A:::::A     A:::::AW:::::W   W:::::W:::::W   W:::::W     
-  D:::::D     D:::::DR::::R     R:::::R      A:::::AAAAAAAAA:::::AW:::::W W:::::W W:::::W W:::::W      
-  D:::::D     D:::::DR::::R     R:::::R     A:::::::::::::::::::::AW:::::W:::::W   W:::::W:::::W       
-  D:::::D    D:::::D R::::R     R:::::R    A:::::AAAAAAAAAAAAA:::::AW:::::::::W     W:::::::::W        
-DDD:::::DDDDD:::::DRR:::::R     R:::::R   A:::::A             A:::::AW:::::::W       W:::::::W         
-D:::::::::::::::DD R::::::R     R:::::R  A:::::A               A:::::AW:::::W         W:::::W          
-D::::::::::::DDD   R::::::R     R:::::R A:::::A                 A:::::AW:::W           W:::W           
-DDDDDDDDDDDDD      RRRRRRRR     RRRRRRRAAAAAAA                   AAAAAAAWWW             WWW                                                                                                             
+▗▄▄▄ ▗▄▄▖  ▗▄▖ ▗▖ ▗▖
+▐▌  █▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌
+▐▌  █▐▛▀▚▖▐▛▀▜▌▐▌ ▐▌
+▐▙▄▄▀▐▌ ▐▌▐▌ ▐▌▐▙█▟▌                                                                                             
 '''
+
 invalid = '''
 ▗▄▄▄▖▗▖  ▗▖▗▖  ▗▖ ▗▄▖ ▗▖   ▗▄▄▄▖▗▄▄▄ 
   █  ▐▛▚▖▐▌▐▌  ▐▌▐▌ ▐▌▐▌     █  ▐▌  █
   █  ▐▌ ▝▜▌▐▌  ▐▌▐▛▀▜▌▐▌     █  ▐▌  █
 ▗▄█▄▖▐▌  ▐▌ ▝▚▞▘ ▐▌ ▐▌▐▙▄▄▖▗▄█▄▖▐▙▄▄▀                            
 '''
+
 goodbuy = '''
  ▗▄▄▖ ▗▄▖  ▗▄▖ ▗▄▄▄  ▗▄▄▖ ▗▖ ▗▖▗▖  ▗▖
 ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌  █ ▐▌ ▐▌▐▌ ▐▌ ▝▚▞▘ 
@@ -90,7 +78,7 @@ print(f"{logo}\n->Make your choice:"
        "\nType:\n0 for - ROCK\n1 for - PAPER\n2 for - SCISSORS\n->Type End to quit.")
 
 # win/lose counters
-game = 1
+game = 0
 wins = 0
 losses = 0
 draws = 0
@@ -99,8 +87,7 @@ while True:
     player = input("Make your choice: ")
 
     if player == 'End'.lower():
-        print(f"Thanks for playing! \n{goodbuy}")
-        print(f"Final Score: Wins: {wins} | Losses: {losses} | Draw:{draws}  \nTotal games: {game}")
+        print(f"{goodbuy}\nFinal Score: Wins: {wins} | Losses: {losses} | Draw:{draws}  \nTotal games: {game}")
         break
 
     if player not in ['0', '1', '2', 'end']:
@@ -144,4 +131,4 @@ while True:
         losses += 1  # add lose score
         game += 1
     # Current Score:
-        print(f"Game # {game} | Wins: {wins} | Losses: {losses} | Draw:{draws} ")
+    print(f"Game # {game} | Wins: {wins} | Losses: {losses} | Draw:{draws} ")
