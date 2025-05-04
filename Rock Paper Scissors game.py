@@ -142,6 +142,6 @@ while True:
     else:
         print(lose)
         losses += 1  # add lose score
-
+        game += 1
     # Current Score:
         print(f"Game # {game} | Wins: {wins} | Losses: {losses} | Draw:{draws} ")
