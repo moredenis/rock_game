@@ -1,5 +1,5 @@
 import random
-
+# ASCII ATR Graphic
 rock = '''
     _______
 ---'   ____)
@@ -31,10 +31,7 @@ win = '''
 ▗▖  ▗▖▗▄▖ ▗▖ ▗▖    ▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖
  ▝▚▞▘▐▌ ▐▌▐▌ ▐▌    ▐▌ ▐▌  █  ▐▛▚▖▐▌
   ▐▌ ▐▌ ▐▌▐▌ ▐▌    ▐▌ ▐▌  █  ▐▌ ▝▜▌
-  ▐▌ ▝▚▄▞▘▝▚▄▞▘    ▐▙█▟▌▗▄█▄▖▐▌  ▐▌
-                                   
-                                   
-                                   
+  ▐▌ ▝▚▄▞▘▝▚▄▞▘    ▐▙█▟▌▗▄█▄▖▐▌  ▐▌                       
 '''
 
 lose = '''
@@ -45,13 +42,10 @@ lose = '''
    ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░        
    ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░        
    ░▒▓█▓▒░    ░▒▓██████▓▒░ ░▒▓██████▓▒░       ░▒▓████████▓▒░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░ 
-                                                                                                   
-                                                                                                   
+                                                                                               
 '''
 
-draw = '''
-                                                                                                       
-                                                                                                       
+draw = '''                                                                                                 
 DDDDDDDDDDDDD      RRRRRRRRRRRRRRRRR                  AAA   WWWWWWWW                           WWWWWWWW
 D::::::::::::DDD   R::::::::::::::::R                A:::A  W::::::W                           W::::::W
 D:::::::::::::::DD R::::::RRRRRR:::::R              A:::::A W::::::W                           W::::::W
@@ -67,58 +61,47 @@ DDD:::::DDDDD:::::DRR:::::R     R:::::R            A:::::::AW::::::W            
 DDD:::::DDDDD:::::DRR:::::R     R:::::R   A:::::A             A:::::AW:::::::W       W:::::::W         
 D:::::::::::::::DD R::::::R     R:::::R  A:::::A               A:::::AW:::::W         W:::::W          
 D::::::::::::DDD   R::::::R     R:::::R A:::::A                 A:::::AW:::W           W:::W           
-DDDDDDDDDDDDD      RRRRRRRR     RRRRRRRAAAAAAA                   AAAAAAAWWW             WWW            
-                                                                                                       
-                                                                                                       
-                                                                                                       
-                                                                                                       
-                                                                                                       
-                                                                                                       
-                                                                                                       
+DDDDDDDDDDDDD      RRRRRRRR     RRRRRRRAAAAAAA                   AAAAAAAWWW             WWW                                                                                                             
 '''
 
 invalid = '''
 ▗▄▄▄▖▗▖  ▗▖▗▖  ▗▖ ▗▄▖ ▗▖   ▗▄▄▄▖▗▄▄▄ 
   █  ▐▛▚▖▐▌▐▌  ▐▌▐▌ ▐▌▐▌     █  ▐▌  █
   █  ▐▌ ▝▜▌▐▌  ▐▌▐▛▀▜▌▐▌     █  ▐▌  █
-▗▄█▄▖▐▌  ▐▌ ▝▚▞▘ ▐▌ ▐▌▐▙▄▄▖▗▄█▄▖▐▙▄▄▀
-                                     
-                                     
-                                     
+▗▄█▄▖▐▌  ▐▌ ▝▚▞▘ ▐▌ ▐▌▐▙▄▄▖▗▄█▄▖▐▙▄▄▀                            
 '''
 goodbuy = '''
  ▗▄▄▖ ▗▄▖  ▗▄▖ ▗▄▄▄  ▗▄▄▖ ▗▖ ▗▖▗▖  ▗▖
 ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌  █ ▐▌ ▐▌▐▌ ▐▌ ▝▚▞▘ 
 ▐▌▝▜▌▐▌ ▐▌▐▌ ▐▌▐▌  █ ▐▛▀▚▖▐▌ ▐▌  ▐▌  
-▝▚▄▞▘▝▚▄▞▘▝▚▄▞▘▐▙▄▄▀ ▐▙▄▞▘▝▚▄▞▘  ▐▌  
-                                     
-                                     
-                                     
+▝▚▄▞▘▝▚▄▞▘▝▚▄▞▘▐▙▄▄▀ ▐▙▄▞▘▝▚▄▞▘  ▐▌                                
 '''
 # greeting
 print("Welcome to Rock Paper Scissors game!\n\n\n->Make your choice:"
       "\nType:\n0 for - ROCK\n1 for - PAPER\n2 for - SCISSORS\n->Type End to quit.")
 
 # win/lose counters
+game = 0
 wins = 0
 losses = 0
+draws = 1
 
 while True:
     player = input("Make your choice: ")
 
-    if player == 'End':
+    if player == 'End'.lower():
         print(f"Thanks for playing! \n{goodbuy}!")
-        print(f"Final Score: Wins: {wins} | Losses: {losses}")
+        print(f"Final Score: Wins: {wins} | Losses: {losses} | Draw:{draws}  \nTotal games: {game}")
         break
 
-    if player not in ['0', '1', '2','End']:
+    if player not in ['0', '1', '2','end']:
         print(f"{invalid}\n\n PLEASE ENTER 0, 1, 2 OR End TO QUIT".upper())
-        continue  # возвращаемся в начало цикла
+        continue  # star over
 
     player = int(player)
     computer = random.randint(0, 2)
 
-    # Вывод выбора компьютера
+    # computer chosing
     if computer == 0:
         print(f'Computer chose: "ROCK"\n{rock}')
     elif computer == 1:
@@ -127,7 +110,7 @@ while True:
         print(f'Computer chose: "SCISSORS"\n{scissors}')
     print("_________________________\n")
 
-    # Вывод выбора игрока
+    # player chosing
     if player == 0:
         print(f'Player chose: "ROCK"\n{rock}')
     elif player == 1:
@@ -135,17 +118,21 @@ while True:
     elif player == 2:
         print(f'Player chose: "SCISSORS"\n{scissors}')
 
-    # Логика игры
+    # wind & lose game logic
     if player == computer:
+        draws +=1
+        game += 1
         print(f"{draw}\n\nPLAY AGAIN!")
+
     elif (player == 0 and computer == 2) or \
          (player == 1 and computer == 0) or \
          (player == 2 and computer == 1):
         print(win)
-        wins += 1  # Увеличиваем счётчик побед
+        wins += 1  # add win score
+        game +=1
     else:
         print(lose)
-        losses += 1  # Увеличиваем счётчик поражений
+        losses += 1  # add lose score 
 
-    # Вывод текущего счёта
-    print(f"Current Score: Wins: {wins} | Losses: {losses}")
+    # Current Score:
+    print(f"Current Score: Wins: {wins} | Losses: {losses} | Draw:{draws} | Game # {game}")
