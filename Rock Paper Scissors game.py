@@ -99,7 +99,7 @@ while True:
     player = input("Make your choice: ")
 
     if player == 'End'.lower():
-        print(f"Thanks for playing! \n{goodbuy}!")
+        print(f"Thanks for playing! \n{goodbuy}")
         print(f"Final Score: Wins: {wins} | Losses: {losses} | Draw:{draws}  \nTotal games: {game}")
         break
 
