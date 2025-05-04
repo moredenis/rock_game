@@ -144,4 +144,4 @@ while True:
         losses += 1  # add lose score
 
     # Current Score:
-    print(f"Current Score: Wins: {wins} | Losses: {losses} | Draw:{draws} | Game # {game}")
+        print(f"Game # {game} | Wins: {wins} | Losses: {losses} | Draw:{draws} ")
