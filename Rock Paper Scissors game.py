@@ -90,10 +90,10 @@ print(f"{logo}\n->Make your choice:"
        "\nType:\n0 for - ROCK\n1 for - PAPER\n2 for - SCISSORS\n->Type End to quit.")
 
 # win/lose counters
-game = 0
+game = 1
 wins = 0
 losses = 0
-draws = 1
+draws = 0
 
 while True:
     player = input("Make your choice: ")
