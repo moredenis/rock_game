@@ -1,5 +1,20 @@
 import random
-# ASCII ATR Graphic
+# ASCII ART Graphic
+logo = '''
+█▀█ █▀█ █▀▀ █▄▀  
+█▀▄ █▄█ █▄▄ █░█  
+
+█▀█ ▄▀█ █▀█ █▀▀ █▀█  
+█▀▀ █▀█ █▀▀ ██▄ █▀▄  
+
+█▀ █▀▀ █ █▀ █▀ █▀█ █▀█ █▀
+▄█ █▄▄ █ ▄█ ▄█ █▄█ █▀▄ ▄█
+
+▄▖▄▖▖  ▖▄▖
+▌ ▌▌▛▖▞▌▙▖
+▙▌▛▌▌▝ ▌▙▖
+'''
+
 rock = '''
     _______
 ---'   ____)
@@ -31,7 +46,8 @@ win = '''
 ▗▖  ▗▖▗▄▖ ▗▖ ▗▖    ▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖
  ▝▚▞▘▐▌ ▐▌▐▌ ▐▌    ▐▌ ▐▌  █  ▐▛▚▖▐▌
   ▐▌ ▐▌ ▐▌▐▌ ▐▌    ▐▌ ▐▌  █  ▐▌ ▝▜▌
-  ▐▌ ▝▚▄▞▘▝▚▄▞▘    ▐▙█▟▌▗▄█▄▖▐▌  ▐▌                       
+  ▐▌ ▝▚▄▞▘▝▚▄▞▘    ▐▙█▟▌▗▄█▄▖▐▌  ▐▌
+
 '''
 
 lose = '''
@@ -42,7 +58,7 @@ lose = '''
    ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░        
    ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░        
    ░▒▓█▓▒░    ░▒▓██████▓▒░ ░▒▓██████▓▒░       ░▒▓████████▓▒░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░ 
-                                                                                               
+
 '''
 
 draw = '''                                                                                                 
@@ -74,10 +90,13 @@ goodbuy = '''
  ▗▄▄▖ ▗▄▖  ▗▄▖ ▗▄▄▄  ▗▄▄▖ ▗▖ ▗▖▗▖  ▗▖
 ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌  █ ▐▌ ▐▌▐▌ ▐▌ ▝▚▞▘ 
 ▐▌▝▜▌▐▌ ▐▌▐▌ ▐▌▐▌  █ ▐▛▀▚▖▐▌ ▐▌  ▐▌  
-▝▚▄▞▘▝▚▄▞▘▝▚▄▞▘▐▙▄▄▀ ▐▙▄▞▘▝▚▄▞▘  ▐▌                                
+▝▚▄▞▘▝▚▄▞▘▝▚▄▞▘▐▙▄▄▀ ▐▙▄▞▘▝▚▄▞▘  ▐▌  
+
 '''
+
+
 # greeting
-print("Welcome to Rock Paper Scissors game!\n\n\n->Make your choice:"
+print(f"{logo}\n->Make your choice:"
       "\nType:\n0 for - ROCK\n1 for - PAPER\n2 for - SCISSORS\n->Type End to quit.")
 
 # win/lose counters
@@ -95,13 +114,13 @@ while True:
         break
 
     if player not in ['0', '1', '2','end']:
-        print(f"{invalid}\n\n PLEASE ENTER 0, 1, 2 to PLAY OR End TO QUIT".lower())
+        print(f"{invalid}\n\n PLEASE ENTER 0, 1, 2 to Play or End TO QUIT".lower())
         continue  # star over
 
     player = int(player)
     computer = random.randint(0, 2)
 
-    # computer chosing
+    # Вывод выбора компьютера
     if computer == 0:
         print(f'Computer chose: "ROCK"\n{rock}')
     elif computer == 1:
@@ -110,7 +129,7 @@ while True:
         print(f'Computer chose: "SCISSORS"\n{scissors}')
     print("_________________________\n")
 
-    # player chosing
+    # Вывод выбора игрока
     if player == 0:
         print(f'Player chose: "ROCK"\n{rock}')
     elif player == 1:
@@ -118,7 +137,7 @@ while True:
     elif player == 2:
         print(f'Player chose: "SCISSORS"\n{scissors}')
 
-    # wind & lose game logic
+    # Логика игры
     if player == computer:
         draws +=1
         game += 1
@@ -128,11 +147,11 @@ while True:
          (player == 1 and computer == 0) or \
          (player == 2 and computer == 1):
         print(win)
-        wins += 1  # add win score
+        wins += 1  # Увеличиваем счётчик побед
         game +=1
     else:
         print(lose)
-        losses += 1  # add lose score 
+        losses += 1  # Увеличиваем счётчик поражений
 
-    # Current Score:
+    # Вывод текущего счёта
     print(f"Current Score: Wins: {wins} | Losses: {losses} | Draw:{draws} | Game # {game}")
