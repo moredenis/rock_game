@@ -72,16 +72,6 @@ rock_paper_scissors/
 - Python 3.x
 - No external libraries needed
 
----
 
-## 💡 Tip
-
-Want to expand the game?
-Try adding:
-- Score saving to file
-- More moves (like "Lizard" and "Spock")
-- Multiplayer mode
-
----
 
 ## 🎉 Have fun playing!
