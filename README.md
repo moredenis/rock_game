@@ -74,10 +74,14 @@ rock_paper_scissors/
 
 ---
 
-📌 *All code in this project was written by hand; no code was generated using AI.*
-```
-📘 *This README file was prepared with AI (ChatGPT).*
+## 📌 NOTE
+
+All code in this project was written by hand; no code was generated using AI.
+📘 This *README* file was prepared with AI (ChatGPT).
+
 
 
 
 ## 🎉 Have fun playing!
+
+
