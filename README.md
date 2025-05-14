@@ -72,6 +72,11 @@ rock_paper_scissors/
 - Python 3.x
 - No external libraries needed
 
+---
+
+📌 *All code in this project was written by hand; no code was generated using AI.*
+📘 *This README file was prepared with AI (ChatGPT).*
+
 
 
 ## 🎉 Have fun playing!
